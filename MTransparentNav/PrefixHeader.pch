@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  MTransparentNav
+//
+//  Created by mengqingzheng on 2017/4/20.
+//  Copyright © 2017年 mengqingzheng. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+
+#import "UINavigationController+NavAlpha.h"
+
+#endif /* PrefixHeader_h */
