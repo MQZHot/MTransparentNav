@@ -45,7 +45,6 @@ static NSString *identifier = @"cell";
 //scrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat y = scrollView.contentOffset.y;
-    NSLog(@"%f",y);
     self.navAlpha = y / 80;
     if (y > 80) {
         self.navTintColor = [UIColor blueColor];
