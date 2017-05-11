@@ -10,6 +10,15 @@ Change NavigationBar's color and transparency at push pop scroll
 ![image](https://github.com/MQZHot/MTransparentNav/raw/master/gif/111.gif) 
 ![image](https://github.com/MQZHot/MTransparentNav/raw/master/gif/222.gif)
 
+# TransparentNav
+
+Package [RTRootNavigationController](https://github.com/rickytan/RTRootNavigationController) & Category of UINavigationBar & UIViewController's category
+
+The Usage of `RTRootNavigationController`
+[https://github.com/rickytan/RTRootNavigationController]
+
+![image](https://github.com/MQZHot/MTransparentNav/raw/master/gif/333.gif)
+
 Usage
 ==============
 
