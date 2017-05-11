@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TransparentNav.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D652A1B21EC45DEB006CD2E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D65D80371EA8F853009E7C77</key>
 		<dict>
 			<key>primary</key>

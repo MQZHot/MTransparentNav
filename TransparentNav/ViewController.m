@@ -1,14 +1,14 @@
 //
 //  ViewController.m
-//  MTransparentNav
+//  TransparentNav
 //
-//  Created by mengqingzheng on 2017/4/20.
+//  Created by mengqingzheng on 2017/5/11.
 //  Copyright © 2017年 mengqingzheng. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "QQQViewController.h"
-
+#import "HomeViewController.h"
+#import "SecondViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -25,8 +25,6 @@ static NSString *identifier = @"cell";
     self.navTintColor = [UIColor redColor];
     self.navBarTintColor = [UIColor greenColor];
     self.navAlpha = 0;
-    
-    
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     UIBarButtonItem *right1 = [[UIBarButtonItem alloc]initWithTitle:@"我的" style:UIBarButtonItemStyleDone target:self action:@selector(AA:)];
@@ -52,7 +50,7 @@ static NSString *identifier = @"cell";
 }
 
 -(void)AA:(UIBarButtonItem *)sender{
-    QQQViewController *VC = [[QQQViewController alloc]init];
+    SecondViewController *VC = [[SecondViewController alloc]init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 //tableHeaderView
@@ -77,7 +75,9 @@ static NSString *identifier = @"cell";
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    ViewController *VC = [[ViewController alloc]init];
+    HomeViewController *VC = [[HomeViewController alloc]init];
     [self.navigationController pushViewController:VC animated:YES];
 }
+
+
 @end

@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CAFAB9DE05D8B3BB161949F560D549E /* UIViewController+RTRootNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D5768A9C79467B8A47AA779CA9110626 /* UIViewController+RTRootNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39AF8DDE70CF237DD598DBBAB20865C6 /* RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90994ABE6A9098F5B0433E7791D8EDC2 /* RTRootNavigationController.m */; };
+		489071CC7176F538C76F0A1F132EB52E /* RTRootNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 83743C45ACE7BBBF1D0A7CBE1E6C006E /* RTRootNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62A4F52EF92D13B900303C22AF0A5D3F /* Pods-TransparentNav-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6216B0821F32A9991AEF71D5715E7B9B /* Pods-TransparentNav-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AFAA9E6D4A8BBE1AB6E2C2599C4B7A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		7B000527263129D9A32EAF46F1E86E36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		7BB38B9FA1C40909FC7B2AC268FA174C /* Pods-TransparentNav-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F70609223BBE74B3A5041AD4F1060 /* Pods-TransparentNav-dummy.m */; };
+		7E19B0FFC67508306DD5DE44153A507A /* RTRootNavigationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8D76B8F509BC558C9AC21082E3C341 /* RTRootNavigationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82F337142BB2D3B75EC528BF93921457 /* RTRootNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 033EAEA412F04BF995AF5F404A91CDE5 /* RTRootNavigationController-dummy.m */; };
+		9B439C3CFE62DAF9A2A685213431EDE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F38DF714671EF1F8A3CA630A030C8E55 /* UIViewController+RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB345439AC81F8693A27370F0498755 /* UIViewController+RTRootNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF718F736E832868BC3D372581631FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B99BCF5ADA6402473EE71499205FCB73;
+			remoteInfo = RTRootNavigationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033EAEA412F04BF995AF5F404A91CDE5 /* RTRootNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RTRootNavigationController-dummy.m"; sourceTree = "<group>"; };
+		21E4896C4DD9BA363A34CB30BECB0E5A /* Pods_TransparentNav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TransparentNav.framework; path = "Pods-TransparentNav.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		333F70609223BBE74B3A5041AD4F1060 /* Pods-TransparentNav-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TransparentNav-dummy.m"; sourceTree = "<group>"; };
+		46A5FFCA79C1A5099F4507BDC022C7A5 /* RTRootNavigationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTRootNavigationController-prefix.pch"; sourceTree = "<group>"; };
+		544945308EABFB5798511C45DD40C765 /* Pods-TransparentNav-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TransparentNav-acknowledgements.markdown"; sourceTree = "<group>"; };
+		57C8A2DC57339096D2F507F85005715E /* RTRootNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RTRootNavigationController.framework; path = RTRootNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C787F486365C13AF273DFCC0BE94031 /* RTRootNavigationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RTRootNavigationController.xcconfig; sourceTree = "<group>"; };
+		5D62F3908143846CE3EDD8D4B3C7A5CA /* Pods-TransparentNav-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TransparentNav-frameworks.sh"; sourceTree = "<group>"; };
+		6216B0821F32A9991AEF71D5715E7B9B /* Pods-TransparentNav-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TransparentNav-umbrella.h"; sourceTree = "<group>"; };
+		7E8D76B8F509BC558C9AC21082E3C341 /* RTRootNavigationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTRootNavigationController-umbrella.h"; sourceTree = "<group>"; };
+		81D825B3CD0B4870BB804C156F0AD10A /* Pods-TransparentNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransparentNav.release.xcconfig"; sourceTree = "<group>"; };
+		83743C45ACE7BBBF1D0A7CBE1E6C006E /* RTRootNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTRootNavigationController.h; path = RTRootNavigationController/Classes/RTRootNavigationController.h; sourceTree = "<group>"; };
+		8DB9446FE1F1221B46D64941DABCCE42 /* Pods-TransparentNav.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TransparentNav.modulemap"; sourceTree = "<group>"; };
+		90994ABE6A9098F5B0433E7791D8EDC2 /* RTRootNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RTRootNavigationController.m; path = RTRootNavigationController/Classes/RTRootNavigationController.m; sourceTree = "<group>"; };
+		90D66C8822D9C045153C29A622A47A41 /* Pods-TransparentNav-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TransparentNav-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF7A8A46D12B26385AEB39F349B5D6A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C9CAC04D66F827E30F9A16FCCEE3C8FE /* Pods-TransparentNav-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TransparentNav-resources.sh"; sourceTree = "<group>"; };
+		C9E6C8957BDE1E8EB0B7D8CEF0B2CD75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5768A9C79467B8A47AA779CA9110626 /* UIViewController+RTRootNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RTRootNavigationController.h"; path = "RTRootNavigationController/Classes/UIViewController+RTRootNavigationController.h"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DEB345439AC81F8693A27370F0498755 /* UIViewController+RTRootNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RTRootNavigationController.m"; path = "RTRootNavigationController/Classes/UIViewController+RTRootNavigationController.m"; sourceTree = "<group>"; };
+		F560686811B7781C2E86017D3411607F /* Pods-TransparentNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TransparentNav.debug.xcconfig"; sourceTree = "<group>"; };
+		FB5837A0A74936C04BA469E542B6C1CD /* RTRootNavigationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RTRootNavigationController.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BC4EC119B67EC321ADD311597FD831B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B439C3CFE62DAF9A2A685213431EDE1 /* Foundation.framework in Frameworks */,
+				7B000527263129D9A32EAF46F1E86E36 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE34F1155186F7AEAB00FC2EE3483B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AFAA9E6D4A8BBE1AB6E2C2599C4B7A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		108608690521C01234E32273C0096734 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB878ADC6929C92AFB85BFCB05AD08E9 /* Pods-TransparentNav */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B0F992BB8381116C0F1F6F21C3BF673 /* RTRootNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				83743C45ACE7BBBF1D0A7CBE1E6C006E /* RTRootNavigationController.h */,
+				90994ABE6A9098F5B0433E7791D8EDC2 /* RTRootNavigationController.m */,
+				D5768A9C79467B8A47AA779CA9110626 /* UIViewController+RTRootNavigationController.h */,
+				DEB345439AC81F8693A27370F0498755 /* UIViewController+RTRootNavigationController.m */,
+				44114451902A4323A54D367985823394 /* Support Files */,
+			);
+			name = RTRootNavigationController;
+			path = RTRootNavigationController;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		44114451902A4323A54D367985823394 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF7A8A46D12B26385AEB39F349B5D6A4 /* Info.plist */,
+				FB5837A0A74936C04BA469E542B6C1CD /* RTRootNavigationController.modulemap */,
+				5C787F486365C13AF273DFCC0BE94031 /* RTRootNavigationController.xcconfig */,
+				033EAEA412F04BF995AF5F404A91CDE5 /* RTRootNavigationController-dummy.m */,
+				46A5FFCA79C1A5099F4507BDC022C7A5 /* RTRootNavigationController-prefix.pch */,
+				7E8D76B8F509BC558C9AC21082E3C341 /* RTRootNavigationController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RTRootNavigationController";
+			sourceTree = "<group>";
+		};
+		70D433F2CEB149E6B0C760811B0792C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21E4896C4DD9BA363A34CB30BECB0E5A /* Pods_TransparentNav.framework */,
+				57C8A2DC57339096D2F507F85005715E /* RTRootNavigationController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D9513508F35C051EAECC8789E9271633 /* Pods */,
+				70D433F2CEB149E6B0C760811B0792C3 /* Products */,
+				108608690521C01234E32273C0096734 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D9513508F35C051EAECC8789E9271633 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B0F992BB8381116C0F1F6F21C3BF673 /* RTRootNavigationController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB878ADC6929C92AFB85BFCB05AD08E9 /* Pods-TransparentNav */ = {
+			isa = PBXGroup;
+			children = (
+				C9E6C8957BDE1E8EB0B7D8CEF0B2CD75 /* Info.plist */,
+				8DB9446FE1F1221B46D64941DABCCE42 /* Pods-TransparentNav.modulemap */,
+				544945308EABFB5798511C45DD40C765 /* Pods-TransparentNav-acknowledgements.markdown */,
+				90D66C8822D9C045153C29A622A47A41 /* Pods-TransparentNav-acknowledgements.plist */,
+				333F70609223BBE74B3A5041AD4F1060 /* Pods-TransparentNav-dummy.m */,
+				5D62F3908143846CE3EDD8D4B3C7A5CA /* Pods-TransparentNav-frameworks.sh */,
+				C9CAC04D66F827E30F9A16FCCEE3C8FE /* Pods-TransparentNav-resources.sh */,
+				6216B0821F32A9991AEF71D5715E7B9B /* Pods-TransparentNav-umbrella.h */,
+				F560686811B7781C2E86017D3411607F /* Pods-TransparentNav.debug.xcconfig */,
+				81D825B3CD0B4870BB804C156F0AD10A /* Pods-TransparentNav.release.xcconfig */,
+			);
+			name = "Pods-TransparentNav";
+			path = "Target Support Files/Pods-TransparentNav";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3AB4E0A83194F4FB60B53254676DC687 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E19B0FFC67508306DD5DE44153A507A /* RTRootNavigationController-umbrella.h in Headers */,
+				489071CC7176F538C76F0A1F132EB52E /* RTRootNavigationController.h in Headers */,
+				1CAFAB9DE05D8B3BB161949F560D549E /* UIViewController+RTRootNavigationController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99423AC4F77A634003DA4066F58AC8C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A4F52EF92D13B900303C22AF0A5D3F /* Pods-TransparentNav-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6F50915710D68B7FF3694B400E76A506 /* Pods-TransparentNav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE67848836C240A8242CDA6CAB44325 /* Build configuration list for PBXNativeTarget "Pods-TransparentNav" */;
+			buildPhases = (
+				962179D714BEC6D0C35177D708B60E23 /* Sources */,
+				EE34F1155186F7AEAB00FC2EE3483B47 /* Frameworks */,
+				99423AC4F77A634003DA4066F58AC8C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61C8F0277EAFA6E10CF2EC0898E5DC20 /* PBXTargetDependency */,
+			);
+			name = "Pods-TransparentNav";
+			productName = "Pods-TransparentNav";
+			productReference = 21E4896C4DD9BA363A34CB30BECB0E5A /* Pods_TransparentNav.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B99BCF5ADA6402473EE71499205FCB73 /* RTRootNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85417EF2F1709CCCA4A1768794E0E3F6 /* Build configuration list for PBXNativeTarget "RTRootNavigationController" */;
+			buildPhases = (
+				9805687EE850D25AEB1AE2B8B7A6FC7F /* Sources */,
+				7BC4EC119B67EC321ADD311597FD831B /* Frameworks */,
+				3AB4E0A83194F4FB60B53254676DC687 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTRootNavigationController;
+			productName = RTRootNavigationController;
+			productReference = 57C8A2DC57339096D2F507F85005715E /* RTRootNavigationController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 70D433F2CEB149E6B0C760811B0792C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F50915710D68B7FF3694B400E76A506 /* Pods-TransparentNav */,
+				B99BCF5ADA6402473EE71499205FCB73 /* RTRootNavigationController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		962179D714BEC6D0C35177D708B60E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB38B9FA1C40909FC7B2AC268FA174C /* Pods-TransparentNav-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9805687EE850D25AEB1AE2B8B7A6FC7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F337142BB2D3B75EC528BF93921457 /* RTRootNavigationController-dummy.m in Sources */,
+				39AF8DDE70CF237DD598DBBAB20865C6 /* RTRootNavigationController.m in Sources */,
+				F38DF714671EF1F8A3CA630A030C8E55 /* UIViewController+RTRootNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61C8F0277EAFA6E10CF2EC0898E5DC20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RTRootNavigationController;
+			target = B99BCF5ADA6402473EE71499205FCB73 /* RTRootNavigationController */;
+			targetProxy = FF718F736E832868BC3D372581631FE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08C08773719378F77C477C3F826E4767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F560686811B7781C2E86017D3411607F /* Pods-TransparentNav.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TransparentNav/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TransparentNav/Pods-TransparentNav.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TransparentNav;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		699CC97A8EEAFD33FF55A35CB1C81828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C787F486365C13AF273DFCC0BE94031 /* RTRootNavigationController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RTRootNavigationController/RTRootNavigationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RTRootNavigationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RTRootNavigationController/RTRootNavigationController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RTRootNavigationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F702064F0BEB3A29F93EA0B326BFE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D825B3CD0B4870BB804C156F0AD10A /* Pods-TransparentNav.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TransparentNav/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TransparentNav/Pods-TransparentNav.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TransparentNav;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8013B6BA223BA199F6F2786C704FFF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C787F486365C13AF273DFCC0BE94031 /* RTRootNavigationController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RTRootNavigationController/RTRootNavigationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RTRootNavigationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RTRootNavigationController/RTRootNavigationController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RTRootNavigationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85417EF2F1709CCCA4A1768794E0E3F6 /* Build configuration list for PBXNativeTarget "RTRootNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699CC97A8EEAFD33FF55A35CB1C81828 /* Debug */,
+				8013B6BA223BA199F6F2786C704FFF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE67848836C240A8242CDA6CAB44325 /* Build configuration list for PBXNativeTarget "Pods-TransparentNav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C08773719378F77C477C3F826E4767 /* Debug */,
+				6F702064F0BEB3A29F93EA0B326BFE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
