@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "mqz" => "mqz1228@163.com" }     
   s.platform     = :ios, "8.0"                     
-  s.source       = { :git => "https://github.com/MQZHot/MTransparentNav.git", :tag => " #{s.version}"  }
+  s.source       = { :git => "https://github.com/MQZHot/MTransparentNav.git", :tag => " 0.0.1"  }
   s.source_files  = "TransparentNav/TransparentNav", "TransparentNav/TransparentNav/*.{h,m}"                
   s.requires_arc = true
   s.dependency 'RTRootNavigationController'
