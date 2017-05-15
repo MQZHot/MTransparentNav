@@ -9,9 +9,7 @@
 #ifndef TransparentNav_h
 #define TransparentNav_h
 
-#import "RTRootNavigationController.h"
 #import "UINavigationBar+NavAlpha.h"
 #import "UIViewController+NavAlpha.h"
-
 
 #endif /* TransparentNav_h */
