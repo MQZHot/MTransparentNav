@@ -45,6 +45,13 @@ You can change nav tintColor and barTintColor in UIScrollViewDelegate
 }
 
 ```
+
+Install
+==============
+pod 'TransparentNav'
+
+#import "TransparentNav.h"
+
 Related articles
 
 [iOS导航栏滑动渐变](http://www.jianshu.com/p/1a52bb764c7e)
