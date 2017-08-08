@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
+
 @interface UINavigationBar (NavAlpha)
 
 @property (nonatomic, assign) CGFloat navAlpha;
+
+@property (nonatomic, assign, getter = isHideShadow) BOOL hideShadow;
 
 @end

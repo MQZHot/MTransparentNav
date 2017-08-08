@@ -8,6 +8,10 @@
 
 #import "UINavigationController+NavAlpha.h"
 #import "UINavigationBar+NavAlpha.h"
+
+
+// ==========================================================================================================================================================================================================================================================================================================================================
+static char *shadowKey = "shadowKey";
 @implementation UINavigationController (NavAlpha)
 
 /// UINavigationBar
@@ -23,28 +27,43 @@
     return YES;
 }
 
+///
+// ============================================================
+-(BOOL)isHideShadow {
+    return [objc_getAssociatedObject(self, shadowKey) boolValue];
+}
+-(void)setHideShadow:(BOOL)hideShadow {
+    self.navigationBar.hideShadow = hideShadow;
+    objc_setAssociatedObject(self, shadowKey, @(hideShadow), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 @end
 
 #pragma mark - UIViewController + NavAlpha
-
+// =================================
 static char *vcAlphaKey = "vcAlphaKey";
 static char *vcColorKey = "vcColorKey";
 static char *vcNavtintColorKey = "vcNavtintColorKey";
+
 @implementation UIViewController (NavAlpha)
 
+/// 透明度
+// ============================================================
 -(CGFloat)navAlpha {
     if (objc_getAssociatedObject(self, vcAlphaKey) == nil) {
         return 1;
     }
     return [objc_getAssociatedObject(self, vcAlphaKey) floatValue];
 }
+
 -(void)setNavAlpha:(CGFloat)navAlpha {
     CGFloat alpha = MAX(MIN(navAlpha, 1), 0);// 0~1
     self.navigationController.navigationBar.navAlpha = alpha;
     objc_setAssociatedObject(self, vcAlphaKey, @(alpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-/// backgroundColor
+/// 背景颜色
+// ============================================================
 -(UIColor *)navBarTintColor {
     UIColor *color = objc_getAssociatedObject(self, vcColorKey);
     if (color == nil) {
@@ -57,7 +76,8 @@ static char *vcNavtintColorKey = "vcNavtintColorKey";
     objc_setAssociatedObject(self, vcColorKey, navBarTintColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-/// tintColor
+/// item字体颜色
+// ============================================================
 -(UIColor *)navTintColor {
     UIColor *color = objc_getAssociatedObject(self, vcNavtintColorKey);
     if (color == nil) {

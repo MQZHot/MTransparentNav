@@ -1,24 +1,22 @@
 //
-//  HomeViewController.m
+//  QViewController.m
 //  MTransparentNav
 //
-//  Created by mengqingzheng on 2017/5/11.
+//  Created by mengqingzheng on 2017/8/8.
 //  Copyright © 2017年 mengqingzheng. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "QViewController.h"
 
-@interface HomeViewController ()
+@interface QViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation QViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
-    self.navBarTintColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

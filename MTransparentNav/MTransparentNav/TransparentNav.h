@@ -9,7 +9,6 @@
 #ifndef TransparentNav_h
 #define TransparentNav_h
 
-#import "UINavigationBar+NavAlpha.h"
-#import "UIViewController+NavAlpha.h"
+#import "UINavigationController+NavAlpha.h"
 
 #endif /* TransparentNav_h */

@@ -11,18 +11,25 @@
 #define IOS10 [[[UIDevice currentDevice]systemVersion] floatValue] >= 10.0
 
 @implementation UINavigationBar (NavAlpha)
+
 static char *navAlphaKey = "navAlphaKey";
+static char *shadowKey = "shadowKey";
+
 -(CGFloat)navAlpha {
     if (objc_getAssociatedObject(self, navAlphaKey) == nil) {
         return 1;
     }
     return [objc_getAssociatedObject(self, navAlphaKey) floatValue];
 }
+
 -(void)setNavAlpha:(CGFloat)navAlpha {
-    CGFloat alpha = MAX(MIN(navAlpha, 1), 0);// 必须在 0~1的范围
+    
+    CGFloat alpha = MAX(MIN(navAlpha, 1), 0);
     
     UIView *barBackground = self.subviews[0];
+    
     if (self.translucent == NO || [self backgroundImageForBarMetrics:UIBarMetricsDefault] != nil) {
+        
         barBackground.alpha = alpha;
         
     } else {
@@ -35,11 +42,27 @@ static char *navAlphaKey = "navAlphaKey";
             effectFilterView.alpha = alpha;
         }
     }
-    /// 黑线
-    UIView *shadowView = [barBackground valueForKey:@"_shadowView"];
-    shadowView.alpha = alpha;
+    
+    if ([barBackground valueForKey:@"_shadowView"]) {
+        UIView *shadowView = [barBackground valueForKey:@"_shadowView"];
+        shadowView.alpha = alpha;
+    }
     
     objc_setAssociatedObject(self, navAlphaKey, @(alpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
+-(BOOL)isHideShadow {
+    return [objc_getAssociatedObject(self, shadowKey) boolValue];
+}
+-(void)setHideShadow:(BOOL)hideShadow {
+    UIView *barBackground = self.subviews[0];
+    if ([barBackground valueForKey:@"_shadowView"]) {
+        UIView *shadowView = [barBackground valueForKey:@"_shadowView"];
+        shadowView.hidden = hideShadow;
+    }
+    objc_setAssociatedObject(self, shadowKey, @(hideShadow), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+
 
 @end

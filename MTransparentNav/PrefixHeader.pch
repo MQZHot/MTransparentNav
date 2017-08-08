@@ -9,7 +9,7 @@
 #ifndef PrefixHeader_h
 #define PrefixHeader_h
 
-#import "UINavigationController+NavAlpha.h"
+#import "TransparentNav.h"
 
 
 #endif /* PrefixHeader_h */

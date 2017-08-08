@@ -1,5 +1,5 @@
 //
-//  QQQViewController.h
+//  ViewController.h
 //  MTransparentNav
 //
 //  Created by mengqingzheng on 2017/4/20.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QQQViewController : UIViewController
+@interface Demo1ViewController : UIViewController
+
 
 @end
+

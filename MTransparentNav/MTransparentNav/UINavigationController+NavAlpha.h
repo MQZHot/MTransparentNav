@@ -8,20 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UINavigationController (NavAlpha)
+@interface UINavigationController (NavAlpha)<UINavigationBarDelegate>
+
 
 @end
 
-
+// ============================================================
 @interface UIViewController (NavAlpha)
 
-/// navAlpha
+/// 导航栏透明度
 @property (nonatomic, assign) CGFloat navAlpha;
 
-/// navbackgroundColor
+/// 导航栏背景颜色
 @property (null_resettable, nonatomic, strong) UIColor *navBarTintColor;
 
-/// tintColor
+/// 导航栏字体颜色
 @property (null_resettable, nonatomic, strong) UIColor *navTintColor;
 
 @end

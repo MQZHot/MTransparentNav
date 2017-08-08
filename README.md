@@ -1,26 +1,17 @@
-# MTransparentNav
 
-Change NavigationBar's color and transparency at push pop scroll 
 
-导航栏滑动渐变 
+## MTransparentNav
 
-[![Language](https://img.shields.io/badge/language-ObjectiveC-brightgreen.svg)](https://github.com/MQZHot/MTransparentNav.git)
-[![Support](https://img.shields.io/badge/support-iOS%208%2B-brightgreen.svg)](https://github.com/MQZHot/MTransparentNav.git)
+Change NavigationBar's color and transparency at push pop scroll
 
-![image](https://github.com/MQZHot/MTransparentNav/raw/master/gif/111.gif) 
-![image](https://github.com/MQZHot/MTransparentNav/raw/master/gif/222.gif)
+导航栏滑动渐变
 
-# TransparentNav
+## 不足之处，欢迎纠正，欢迎star✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
 
-Package [RTRootNavigationController](https://github.com/rickytan/RTRootNavigationController) & Category of UINavigationBar & UIViewController's category
 
-The Usage of `RTRootNavigationController`
-[https://github.com/rickytan/RTRootNavigationController]
+![image](https://github.com/MQZHot/MTransparentNav/raw/master/Picture/pic1.gif) ![image](https://github.com/MQZHot/MTransparentNav/raw/master/Picture/pic2.gif)
 
-![image](https://github.com/MQZHot/MTransparentNav/raw/master/gif/333.gif)
-
-Usage
-==============
+## Usage
 
 In the need to change the color of the controller
 
@@ -33,27 +24,36 @@ self.navAlpha = 0;
 
 You can change nav tintColor and barTintColor in UIScrollViewDelegate
 
-```
+```swift
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat y = scrollView.contentOffset.y;
     self.navAlpha = y / 80;
-    if (y > 80) {
-        self.navTintColor = [UIColor blueColor];
-    } else {
-        self.navTintColor = y < 0 ? [UIColor clearColor] : [UIColor redColor];
-    }
+   if (y > 80) {
+      self.navTintColor = [UIColor blueColor];
+   } else {
+      self.navTintColor = y < 0 ? [UIColor clearColor] : [UIColor whiteColor];
+   }
 }
 
 ```
 
-Install
-==============
-pod 'TransparentNav'
+## Install
 
-#import "TransparentNav.h"
+* pod 'TransparentNav'
 
-Related articles
+* #import "TransparentNav.h"
+
+## Related articles
 
 [iOS导航栏滑动渐变](http://www.jianshu.com/p/1a52bb764c7e)
+
+## Author
+
+* Email: mqz1228@163.com
+* 简 书 : http://www.jianshu.com/u/9e39ec4000e9
+
+## LICENSE
+
+MTransparentNav is released under the MIT license. See [LICENSE](https://github.com/MQZHot/MTransparentNav/blob/master/LICENSE) for details.
 
 

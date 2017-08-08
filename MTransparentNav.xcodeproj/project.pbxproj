@@ -7,49 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7499E86DF39B950ED78E04D8 /* Pods_TransparentNav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1332CD79373A8FE3CE44924 /* Pods_TransparentNav.framework */; };
-		D652A1B71EC45DEC006CD2E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D652A1B61EC45DEC006CD2E7 /* main.m */; };
-		D652A1BA1EC45DEC006CD2E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D652A1B91EC45DEC006CD2E7 /* AppDelegate.m */; };
-		D652A1BD1EC45DEC006CD2E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D652A1BC1EC45DEC006CD2E7 /* ViewController.m */; };
-		D652A1C21EC45DEC006CD2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D652A1C11EC45DEC006CD2E7 /* Assets.xcassets */; };
-		D652A1C51EC45DEC006CD2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D652A1C31EC45DEC006CD2E7 /* LaunchScreen.storyboard */; };
-		D652A1D11EC45F3B006CD2E7 /* UINavigationBar+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D652A1CE1EC45F3B006CD2E7 /* UINavigationBar+NavAlpha.m */; };
-		D652A1D51EC45FB8006CD2E7 /* UIViewController+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D652A1D41EC45FB8006CD2E7 /* UIViewController+NavAlpha.m */; };
-		D652A1D81EC460EB006CD2E7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D652A1D71EC460EB006CD2E7 /* SecondViewController.m */; };
-		D652A1DC1EC463B1006CD2E7 /* 路上.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D80521EA8F872009E7C77 /* 路上.png */; };
-		D652A1DF1EC46465006CD2E7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D652A1DE1EC46465006CD2E7 /* HomeViewController.m */; };
 		D65D803D1EA8F853009E7C77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D803C1EA8F853009E7C77 /* main.m */; };
 		D65D80401EA8F853009E7C77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D803F1EA8F853009E7C77 /* AppDelegate.m */; };
 		D65D80481EA8F853009E7C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65D80471EA8F853009E7C77 /* Assets.xcassets */; };
 		D65D804B1EA8F853009E7C77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65D80491EA8F853009E7C77 /* LaunchScreen.storyboard */; };
-		D65D80531EA8F872009E7C77 /* 路上.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D80521EA8F872009E7C77 /* 路上.png */; };
-		D65D80601EA8F907009E7C77 /* UINavigationBar+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D805D1EA8F907009E7C77 /* UINavigationBar+NavAlpha.m */; };
 		D65D80611EA8F907009E7C77 /* UINavigationController+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D805F1EA8F907009E7C77 /* UINavigationController+NavAlpha.m */; };
-		D65D80651EA8F92E009E7C77 /* QQQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D80641EA8F92E009E7C77 /* QQQViewController.m */; };
-		D65D80681EA8F989009E7C77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D80671EA8F989009E7C77 /* ViewController.m */; };
+		D65D80681EA8F989009E7C77 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D80671EA8F989009E7C77 /* Demo1ViewController.m */; };
+		D67998EF1F395CDC00EFA3C6 /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = D67998EE1F395CDC00EFA3C6 /* mine.png */; };
+		D67998F21F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D67998F11F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m */; };
+		D67998F51F39927400EFA3C6 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67998F41F39927400EFA3C6 /* QViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA5D73F50C3BB231C0CBBF81 /* Pods_MTransparentNav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTransparentNav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D652A1B31EC45DEB006CD2E7 /* TransparentNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransparentNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D652A1B61EC45DEC006CD2E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D652A1B81EC45DEC006CD2E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D652A1B91EC45DEC006CD2E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D652A1BB1EC45DEC006CD2E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D652A1BC1EC45DEC006CD2E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D652A1C11EC45DEC006CD2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D652A1C41EC45DEC006CD2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D652A1C61EC45DEC006CD2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D652A1CA1EC45E9D006CD2E7 /* prefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefixHeader.pch; sourceTree = "<group>"; };
-		D652A1CC1EC45EE5006CD2E7 /* TransparentNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentNav.h; sourceTree = "<group>"; };
-		D652A1CD1EC45F3B006CD2E7 /* UINavigationBar+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavAlpha.h"; sourceTree = "<group>"; };
-		D652A1CE1EC45F3B006CD2E7 /* UINavigationBar+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavAlpha.m"; sourceTree = "<group>"; };
-		D652A1D31EC45FB8006CD2E7 /* UIViewController+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavAlpha.h"; sourceTree = "<group>"; };
-		D652A1D41EC45FB8006CD2E7 /* UIViewController+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavAlpha.m"; sourceTree = "<group>"; };
-		D652A1D61EC460EB006CD2E7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		D652A1D71EC460EB006CD2E7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		D652A1DD1EC46465006CD2E7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		D652A1DE1EC46465006CD2E7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D65D80381EA8F853009E7C77 /* MTransparentNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTransparentNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65D803C1EA8F853009E7C77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D65D803E1EA8F853009E7C77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,30 +26,20 @@
 		D65D80471EA8F853009E7C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D65D804A1EA8F853009E7C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D65D804C1EA8F853009E7C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D65D80521EA8F872009E7C77 /* 路上.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路上.png"; sourceTree = "<group>"; };
-		D65D805C1EA8F907009E7C77 /* UINavigationBar+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavAlpha.h"; sourceTree = "<group>"; };
-		D65D805D1EA8F907009E7C77 /* UINavigationBar+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavAlpha.m"; sourceTree = "<group>"; };
 		D65D805E1EA8F907009E7C77 /* UINavigationController+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NavAlpha.h"; sourceTree = "<group>"; };
 		D65D805F1EA8F907009E7C77 /* UINavigationController+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NavAlpha.m"; sourceTree = "<group>"; };
 		D65D80621EA8F92E009E7C77 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		D65D80631EA8F92E009E7C77 /* QQQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQQViewController.h; sourceTree = "<group>"; };
-		D65D80641EA8F92E009E7C77 /* QQQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQQViewController.m; sourceTree = "<group>"; };
-		D65D80661EA8F989009E7C77 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D65D80671EA8F989009E7C77 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EB3B1FF11085E5E2F7F99920 /* Pods-TransparentNav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransparentNav.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransparentNav/Pods-TransparentNav.debug.xcconfig"; sourceTree = "<group>"; };
-		EFA71F0C3DD094E4CB870B4D /* Pods-TransparentNav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransparentNav.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransparentNav/Pods-TransparentNav.release.xcconfig"; sourceTree = "<group>"; };
-		F1332CD79373A8FE3CE44924 /* Pods_TransparentNav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransparentNav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65D80661EA8F989009E7C77 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		D65D80671EA8F989009E7C77 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		D67998EE1F395CDC00EFA3C6 /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine.png; sourceTree = "<group>"; };
+		D67998F01F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavAlpha.h"; sourceTree = "<group>"; };
+		D67998F11F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavAlpha.m"; sourceTree = "<group>"; };
+		D67998F31F39927400EFA3C6 /* QViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
+		D67998F41F39927400EFA3C6 /* QViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
+		D6916C261F0B71BD00B26552 /* TransparentNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentNav.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D652A1B01EC45DEB006CD2E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7499E86DF39B950ED78E04D8 /* Pods_TransparentNav.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D65D80351EA8F853009E7C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,65 +50,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07AE823DDABB743008D9D849 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EB3B1FF11085E5E2F7F99920 /* Pods-TransparentNav.debug.xcconfig */,
-				EFA71F0C3DD094E4CB870B4D /* Pods-TransparentNav.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D652A1B41EC45DEC006CD2E7 /* TransparentNav */ = {
-			isa = PBXGroup;
-			children = (
-				D652A1CB1EC45EBC006CD2E7 /* TransparentNav */,
-				D652A1B81EC45DEC006CD2E7 /* AppDelegate.h */,
-				D652A1B91EC45DEC006CD2E7 /* AppDelegate.m */,
-				D652A1BB1EC45DEC006CD2E7 /* ViewController.h */,
-				D652A1BC1EC45DEC006CD2E7 /* ViewController.m */,
-				D652A1D61EC460EB006CD2E7 /* SecondViewController.h */,
-				D652A1D71EC460EB006CD2E7 /* SecondViewController.m */,
-				D652A1DD1EC46465006CD2E7 /* HomeViewController.h */,
-				D652A1DE1EC46465006CD2E7 /* HomeViewController.m */,
-				D652A1CA1EC45E9D006CD2E7 /* prefixHeader.pch */,
-				D652A1C11EC45DEC006CD2E7 /* Assets.xcassets */,
-				D652A1C31EC45DEC006CD2E7 /* LaunchScreen.storyboard */,
-				D652A1C61EC45DEC006CD2E7 /* Info.plist */,
-				D652A1B51EC45DEC006CD2E7 /* Supporting Files */,
-			);
-			path = TransparentNav;
-			sourceTree = "<group>";
-		};
-		D652A1B51EC45DEC006CD2E7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D652A1B61EC45DEC006CD2E7 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D652A1CB1EC45EBC006CD2E7 /* TransparentNav */ = {
-			isa = PBXGroup;
-			children = (
-				D652A1CC1EC45EE5006CD2E7 /* TransparentNav.h */,
-				D652A1CD1EC45F3B006CD2E7 /* UINavigationBar+NavAlpha.h */,
-				D652A1CE1EC45F3B006CD2E7 /* UINavigationBar+NavAlpha.m */,
-				D652A1D31EC45FB8006CD2E7 /* UIViewController+NavAlpha.h */,
-				D652A1D41EC45FB8006CD2E7 /* UIViewController+NavAlpha.m */,
-			);
-			path = TransparentNav;
-			sourceTree = "<group>";
-		};
 		D65D802F1EA8F853009E7C77 = {
 			isa = PBXGroup;
 			children = (
-				D65D80521EA8F872009E7C77 /* 路上.png */,
 				D65D803A1EA8F853009E7C77 /* MTransparentNav */,
-				D652A1B41EC45DEC006CD2E7 /* TransparentNav */,
 				D65D80391EA8F853009E7C77 /* Products */,
-				07AE823DDABB743008D9D849 /* Pods */,
-				F1BB77F08A791C70CD3CCF72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				D65D80381EA8F853009E7C77 /* MTransparentNav.app */,
-				D652A1B31EC45DEB006CD2E7 /* TransparentNav.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,11 +72,12 @@
 				D65D805B1EA8F907009E7C77 /* MTransparentNav */,
 				D65D803E1EA8F853009E7C77 /* AppDelegate.h */,
 				D65D803F1EA8F853009E7C77 /* AppDelegate.m */,
-				D65D80661EA8F989009E7C77 /* ViewController.h */,
-				D65D80671EA8F989009E7C77 /* ViewController.m */,
+				D65D80661EA8F989009E7C77 /* Demo1ViewController.h */,
+				D65D80671EA8F989009E7C77 /* Demo1ViewController.m */,
+				D67998F31F39927400EFA3C6 /* QViewController.h */,
+				D67998F41F39927400EFA3C6 /* QViewController.m */,
 				D65D80621EA8F92E009E7C77 /* PrefixHeader.pch */,
-				D65D80631EA8F92E009E7C77 /* QQQViewController.h */,
-				D65D80641EA8F92E009E7C77 /* QQQViewController.m */,
+				D67998EE1F395CDC00EFA3C6 /* mine.png */,
 				D65D80471EA8F853009E7C77 /* Assets.xcassets */,
 				D65D804C1EA8F853009E7C77 /* Info.plist */,
 				D65D80491EA8F853009E7C77 /* LaunchScreen.storyboard */,
@@ -192,46 +97,18 @@
 		D65D805B1EA8F907009E7C77 /* MTransparentNav */ = {
 			isa = PBXGroup;
 			children = (
-				D65D805C1EA8F907009E7C77 /* UINavigationBar+NavAlpha.h */,
-				D65D805D1EA8F907009E7C77 /* UINavigationBar+NavAlpha.m */,
+				D6916C261F0B71BD00B26552 /* TransparentNav.h */,
+				D67998F01F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.h */,
+				D67998F11F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m */,
 				D65D805E1EA8F907009E7C77 /* UINavigationController+NavAlpha.h */,
 				D65D805F1EA8F907009E7C77 /* UINavigationController+NavAlpha.m */,
 			);
 			path = MTransparentNav;
 			sourceTree = "<group>";
 		};
-		F1BB77F08A791C70CD3CCF72 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CA5D73F50C3BB231C0CBBF81 /* Pods_MTransparentNav.framework */,
-				F1332CD79373A8FE3CE44924 /* Pods_TransparentNav.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D652A1B21EC45DEB006CD2E7 /* TransparentNav */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D652A1C71EC45DEC006CD2E7 /* Build configuration list for PBXNativeTarget "TransparentNav" */;
-			buildPhases = (
-				A3C72A05B486BBDE62B70EFD /* [CP] Check Pods Manifest.lock */,
-				D652A1AF1EC45DEB006CD2E7 /* Sources */,
-				D652A1B01EC45DEB006CD2E7 /* Frameworks */,
-				D652A1B11EC45DEB006CD2E7 /* Resources */,
-				63D06C73D656929170E30420 /* [CP] Embed Pods Frameworks */,
-				AFF9F44A5A32C086F01BEDE0 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TransparentNav;
-			productName = TransparentNav;
-			productReference = D652A1B31EC45DEB006CD2E7 /* TransparentNav.app */;
-			productType = "com.apple.product-type.application";
-		};
 		D65D80371EA8F853009E7C77 /* MTransparentNav */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D65D804F1EA8F853009E7C77 /* Build configuration list for PBXNativeTarget "MTransparentNav" */;
@@ -258,10 +135,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = mengqingzheng;
 				TargetAttributes = {
-					D652A1B21EC45DEB006CD2E7 = {
-						CreatedOnToolsVersion = 8.3.1;
-						ProvisioningStyle = Automatic;
-					};
 					D65D80371EA8F853009E7C77 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 47ZCN2V9UQ;
@@ -283,106 +156,33 @@
 			projectRoot = "";
 			targets = (
 				D65D80371EA8F853009E7C77 /* MTransparentNav */,
-				D652A1B21EC45DEB006CD2E7 /* TransparentNav */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D652A1B11EC45DEB006CD2E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D652A1C51EC45DEC006CD2E7 /* LaunchScreen.storyboard in Resources */,
-				D652A1DC1EC463B1006CD2E7 /* 路上.png in Resources */,
-				D652A1C21EC45DEC006CD2E7 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D65D80361EA8F853009E7C77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D65D804B1EA8F853009E7C77 /* LaunchScreen.storyboard in Resources */,
-				D65D80531EA8F872009E7C77 /* 路上.png in Resources */,
 				D65D80481EA8F853009E7C77 /* Assets.xcassets in Resources */,
+				D67998EF1F395CDC00EFA3C6 /* mine.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		63D06C73D656929170E30420 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransparentNav/Pods-TransparentNav-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A3C72A05B486BBDE62B70EFD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AFF9F44A5A32C086F01BEDE0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransparentNav/Pods-TransparentNav-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		D652A1AF1EC45DEB006CD2E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D652A1D81EC460EB006CD2E7 /* SecondViewController.m in Sources */,
-				D652A1BD1EC45DEC006CD2E7 /* ViewController.m in Sources */,
-				D652A1BA1EC45DEC006CD2E7 /* AppDelegate.m in Sources */,
-				D652A1D51EC45FB8006CD2E7 /* UIViewController+NavAlpha.m in Sources */,
-				D652A1D11EC45F3B006CD2E7 /* UINavigationBar+NavAlpha.m in Sources */,
-				D652A1DF1EC46465006CD2E7 /* HomeViewController.m in Sources */,
-				D652A1B71EC45DEC006CD2E7 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D65D80341EA8F853009E7C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65D80681EA8F989009E7C77 /* ViewController.m in Sources */,
+				D65D80681EA8F989009E7C77 /* Demo1ViewController.m in Sources */,
 				D65D80401EA8F853009E7C77 /* AppDelegate.m in Sources */,
+				D67998F51F39927400EFA3C6 /* QViewController.m in Sources */,
 				D65D80611EA8F907009E7C77 /* UINavigationController+NavAlpha.m in Sources */,
-				D65D80601EA8F907009E7C77 /* UINavigationBar+NavAlpha.m in Sources */,
-				D65D80651EA8F92E009E7C77 /* QQQViewController.m in Sources */,
+				D67998F21F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m in Sources */,
 				D65D803D1EA8F853009E7C77 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,14 +190,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D652A1C31EC45DEC006CD2E7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D652A1C41EC45DEC006CD2E7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		D65D80491EA8F853009E7C77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,36 +201,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D652A1C81EC45DEC006CD2E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB3B1FF11085E5E2F7F99920 /* Pods-TransparentNav.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/TransparentNav/prefixHeader.pch";
-				INFOPLIST_FILE = TransparentNav/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mengqingzheng.TransparentNav;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		D652A1C91EC45DEC006CD2E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFA71F0C3DD094E4CB870B4D /* Pods-TransparentNav.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/TransparentNav/prefixHeader.pch";
-				INFOPLIST_FILE = TransparentNav/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mengqingzheng.TransparentNav;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		D65D804D1EA8F853009E7C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -562,15 +324,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D652A1C71EC45DEC006CD2E7 /* Build configuration list for PBXNativeTarget "TransparentNav" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D652A1C81EC45DEC006CD2E7 /* Debug */,
-				D652A1C91EC45DEC006CD2E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D65D80331EA8F853009E7C77 /* Build configuration list for PBXProject "MTransparentNav" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
