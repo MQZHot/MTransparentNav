@@ -12,9 +12,8 @@
 		D65D80481EA8F853009E7C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65D80471EA8F853009E7C77 /* Assets.xcassets */; };
 		D65D804B1EA8F853009E7C77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65D80491EA8F853009E7C77 /* LaunchScreen.storyboard */; };
 		D65D80611EA8F907009E7C77 /* UINavigationController+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D805F1EA8F907009E7C77 /* UINavigationController+NavAlpha.m */; };
-		D65D80681EA8F989009E7C77 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D80671EA8F989009E7C77 /* Demo1ViewController.m */; };
+		D65D80681EA8F989009E7C77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65D80671EA8F989009E7C77 /* ViewController.m */; };
 		D67998EF1F395CDC00EFA3C6 /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = D67998EE1F395CDC00EFA3C6 /* mine.png */; };
-		D67998F21F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D67998F11F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m */; };
 		D67998F51F39927400EFA3C6 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67998F41F39927400EFA3C6 /* QViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +28,9 @@
 		D65D805E1EA8F907009E7C77 /* UINavigationController+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NavAlpha.h"; sourceTree = "<group>"; };
 		D65D805F1EA8F907009E7C77 /* UINavigationController+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NavAlpha.m"; sourceTree = "<group>"; };
 		D65D80621EA8F92E009E7C77 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		D65D80661EA8F989009E7C77 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
-		D65D80671EA8F989009E7C77 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		D65D80661EA8F989009E7C77 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D65D80671EA8F989009E7C77 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D67998EE1F395CDC00EFA3C6 /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine.png; sourceTree = "<group>"; };
-		D67998F01F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavAlpha.h"; sourceTree = "<group>"; };
-		D67998F11F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavAlpha.m"; sourceTree = "<group>"; };
 		D67998F31F39927400EFA3C6 /* QViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
 		D67998F41F39927400EFA3C6 /* QViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
 		D6916C261F0B71BD00B26552 /* TransparentNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentNav.h; sourceTree = "<group>"; };
@@ -72,8 +69,8 @@
 				D65D805B1EA8F907009E7C77 /* MTransparentNav */,
 				D65D803E1EA8F853009E7C77 /* AppDelegate.h */,
 				D65D803F1EA8F853009E7C77 /* AppDelegate.m */,
-				D65D80661EA8F989009E7C77 /* Demo1ViewController.h */,
-				D65D80671EA8F989009E7C77 /* Demo1ViewController.m */,
+				D65D80661EA8F989009E7C77 /* ViewController.h */,
+				D65D80671EA8F989009E7C77 /* ViewController.m */,
 				D67998F31F39927400EFA3C6 /* QViewController.h */,
 				D67998F41F39927400EFA3C6 /* QViewController.m */,
 				D65D80621EA8F92E009E7C77 /* PrefixHeader.pch */,
@@ -98,8 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				D6916C261F0B71BD00B26552 /* TransparentNav.h */,
-				D67998F01F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.h */,
-				D67998F11F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m */,
 				D65D805E1EA8F907009E7C77 /* UINavigationController+NavAlpha.h */,
 				D65D805F1EA8F907009E7C77 /* UINavigationController+NavAlpha.m */,
 			);
@@ -132,7 +127,7 @@
 		D65D80301EA8F853009E7C77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = mengqingzheng;
 				TargetAttributes = {
 					D65D80371EA8F853009E7C77 = {
@@ -178,11 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65D80681EA8F989009E7C77 /* Demo1ViewController.m in Sources */,
+				D65D80681EA8F989009E7C77 /* ViewController.m in Sources */,
 				D65D80401EA8F853009E7C77 /* AppDelegate.m in Sources */,
 				D67998F51F39927400EFA3C6 /* QViewController.m in Sources */,
 				D65D80611EA8F907009E7C77 /* UINavigationController+NavAlpha.m in Sources */,
-				D67998F21F398B3E00EFA3C6 /* UINavigationBar+NavAlpha.m in Sources */,
 				D65D803D1EA8F853009E7C77 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +205,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -219,7 +215,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,7 +259,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -267,7 +269,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

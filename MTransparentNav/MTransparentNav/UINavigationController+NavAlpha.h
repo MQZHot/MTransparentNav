@@ -10,7 +10,6 @@
 
 @interface UINavigationController (NavAlpha)<UINavigationBarDelegate>
 
-
 @end
 
 // ============================================================
@@ -20,9 +19,12 @@
 @property (nonatomic, assign) CGFloat navAlpha;
 
 /// 导航栏背景颜色
-@property (null_resettable, nonatomic, strong) UIColor *navBarTintColor;
+@property (null_resettable, nonatomic, strong) UIColor *navBackgroundColor;
 
 /// 导航栏字体颜色
 @property (null_resettable, nonatomic, strong) UIColor *navTintColor;
+
+/// 导航栏字体颜色
+@property (null_resettable, nonatomic, strong) UIColor *navTitleColor;
 
 @end

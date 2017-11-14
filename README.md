@@ -1,24 +1,31 @@
 
-
+<p align="center">
 ## MTransparentNav
 
-Change NavigationBar's color and transparency at push pop scroll
+Change NavigationBar's color and transparency
 
 导航栏滑动渐变
+</p>
 
-## 不足之处，欢迎纠正，欢迎star✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+<p align="center">
+<img src="https://img.shields.io/badge/platform-iOS-yellow.svg">
+<img src="https://img.shields.io/cocoapods/v/TransparentNav.svg?style=flat">
+</p>
 
+<p align="center">
+<img src="https://github.com/MQZHot/MTransparentNav/raw/master/Picture/pic0.gif">
+</p>
 
-![image](https://github.com/MQZHot/MTransparentNav/raw/master/Picture/pic1.gif) ![image](https://github.com/MQZHot/MTransparentNav/raw/master/Picture/pic2.gif)
 
 ## Usage
 
 In the need to change the color of the controller
 
-```
-self.navTintColor = [UIColor redColor];
-self.navBarTintColor = [UIColor greenColor];
+```objc
 self.navAlpha = 0;
+self.navTintColor = [UIColor whiteColor];
+self.navTitleColor = [UIColor whiteColor];
+self.navBackgroundColor = [UIColor greenColor];
 
 ```
 
@@ -28,13 +35,13 @@ You can change nav tintColor and barTintColor in UIScrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat y = scrollView.contentOffset.y;
     self.navAlpha = y / 80;
-   if (y > 80) {
-      self.navTintColor = [UIColor blueColor];
-   } else {
-      self.navTintColor = y < 0 ? [UIColor clearColor] : [UIColor whiteColor];
-   }
+    if (y > 80) {
+        self.navTitleColor = self.navTintColor = [UIColor redColor];
+    } else {
+        self.navTitleColor = y < 0 ? [UIColor clearColor] : [UIColor whiteColor];
+        self.navTintColor = y < 0 ? [UIColor clearColor] : [UIColor whiteColor];
+    }
 }
-
 ```
 
 ## Install

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Demo1ViewController.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,15 +19,15 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    Demo1ViewController *rootVC = [[Demo1ViewController alloc]init];
+    ViewController *rootVC = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    
-    [[UINavigationBar appearance]setBarTintColor:[UIColor purpleColor]];
-    [[UINavigationBar appearance]setTintColor:[UIColor yellowColor]];
+//    [[UINavigationBar appearance]setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
+//    [[UINavigationBar appearance]setBarTintColor:[UIColor purpleColor]];
+//    [[UINavigationBar appearance]setTintColor:[UIColor yellowColor]];
     
     return YES;
 }

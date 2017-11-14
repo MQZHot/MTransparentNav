@@ -7,87 +7,96 @@
 //
 
 #import "UINavigationController+NavAlpha.h"
-#import "UINavigationBar+NavAlpha.h"
+#import <objc/runtime.h>
+#define IOS10 [[[UIDevice currentDevice]systemVersion] floatValue] >= 10.0
 
-
-// ==========================================================================================================================================================================================================================================================================================================================================
-static char *shadowKey = "shadowKey";
 @implementation UINavigationController (NavAlpha)
 
-/// UINavigationBar
 -(void)navigationBar:(UINavigationBar *)navigationBar didPopItem:(UINavigationItem *)item {
+    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: self.topViewController.navTitleColor};
     navigationBar.tintColor = self.topViewController.navTintColor;
-    navigationBar.barTintColor = self.topViewController.navBarTintColor;
-    navigationBar.navAlpha = self.topViewController.navAlpha;
+    navigationBar.barTintColor = self.topViewController.navBackgroundColor;
+    [self setNavigationBackgroundAlpha:self.topViewController.navAlpha];
 }
--(BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPushItem:(UINavigationItem *)item {
+- (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPushItem:(UINavigationItem *)item {
+    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: self.topViewController.navTitleColor};
     navigationBar.tintColor = self.topViewController.navTintColor;
-    navigationBar.barTintColor = self.topViewController.navBarTintColor;
-    navigationBar.navAlpha = self.topViewController.navAlpha;
+    navigationBar.barTintColor = self.topViewController.navBackgroundColor;
+    [self setNavigationBackgroundAlpha:self.topViewController.navAlpha];
     return YES;
 }
 
-///
-// ============================================================
--(BOOL)isHideShadow {
-    return [objc_getAssociatedObject(self, shadowKey) boolValue];
+-(void)setNavigationBackgroundAlpha:(CGFloat)navAlpha {
+    CGFloat alpha = MAX(MIN(navAlpha, 1), 0);
+    UIView *barBackground = self.navigationBar.subviews[0];
+    if (self.navigationBar.translucent == NO || [self.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] != nil) {
+        barBackground.alpha = alpha;
+    } else {
+        if (IOS10) {
+            UIView *effectFilterView = barBackground.subviews.lastObject;
+            effectFilterView.alpha = alpha;
+        } else {
+            UIView *effectFilterView = barBackground.subviews.firstObject;
+            effectFilterView.alpha = alpha;
+        }
+    }
+    if ([barBackground valueForKey:@"_shadowView"]) {
+        UIView *shadowView = [barBackground valueForKey:@"_shadowView"];
+        shadowView.alpha = alpha;
+        shadowView.hidden = alpha == 0 ? YES : NO;
+    }
 }
--(void)setHideShadow:(BOOL)hideShadow {
-    self.navigationBar.hideShadow = hideShadow;
-    objc_setAssociatedObject(self, shadowKey, @(hideShadow), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
 @end
 
 #pragma mark - UIViewController + NavAlpha
-// =================================
 static char *vcAlphaKey = "vcAlphaKey";
-static char *vcColorKey = "vcColorKey";
-static char *vcNavtintColorKey = "vcNavtintColorKey";
-
+static char *vcBgColorKey = "vcBgColorKey";
+static char *vcNavTintColorKey = "vcNavTintColorKey";
+static char *vcTitleColorKey = "vcTitleColorKey";
 @implementation UIViewController (NavAlpha)
-
 /// 透明度
-// ============================================================
 -(CGFloat)navAlpha {
-    if (objc_getAssociatedObject(self, vcAlphaKey) == nil) {
-        return 1;
-    }
+    if (objc_getAssociatedObject(self, vcAlphaKey) == nil) { return 1; }
     return [objc_getAssociatedObject(self, vcAlphaKey) floatValue];
 }
-
 -(void)setNavAlpha:(CGFloat)navAlpha {
     CGFloat alpha = MAX(MIN(navAlpha, 1), 0);// 0~1
-    self.navigationController.navigationBar.navAlpha = alpha;
+    [self.navigationController setNavigationBackgroundAlpha:alpha];
     objc_setAssociatedObject(self, vcAlphaKey, @(alpha), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-
 /// 背景颜色
-// ============================================================
--(UIColor *)navBarTintColor {
-    UIColor *color = objc_getAssociatedObject(self, vcColorKey);
-    if (color == nil) {
-        color = [UINavigationBar appearance].barTintColor;
-    }
+-(UIColor *)navBackgroundColor {
+    UIColor *color = objc_getAssociatedObject(self, vcBgColorKey);
+    if (color == nil) { color = [UINavigationBar appearance].barTintColor; }
     return color;
 }
--(void)setNavBarTintColor:(UIColor *)navBarTintColor {
-    self.navigationController.navigationBar.barTintColor = navBarTintColor;
-    objc_setAssociatedObject(self, vcColorKey, navBarTintColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setNavBackgroundColor:(UIColor *)navBackgroundColor {
+    self.navigationController.navigationBar.barTintColor = navBackgroundColor;
+    objc_setAssociatedObject(self, vcBgColorKey, navBackgroundColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-
 /// item字体颜色
-// ============================================================
 -(UIColor *)navTintColor {
-    UIColor *color = objc_getAssociatedObject(self, vcNavtintColorKey);
-    if (color == nil) {
-        color = [UINavigationBar appearance].tintColor;
-    }
+    UIColor *color = objc_getAssociatedObject(self, vcNavTintColorKey);
+    if (color == nil) { color = [UINavigationBar appearance].tintColor; }
     return color;
 }
 -(void)setNavTintColor:(UIColor *)tintColor {
     self.navigationController.navigationBar.tintColor = tintColor;
-    objc_setAssociatedObject(self, vcNavtintColorKey, tintColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, vcNavTintColorKey, tintColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-
+/// title颜色
+-(UIColor *)navTitleColor {
+    UIColor *color = objc_getAssociatedObject(self, vcTitleColorKey);
+    if (color == nil) {
+        color = [UINavigationBar appearance].titleTextAttributes[NSForegroundColorAttributeName];
+        if (color == nil) {
+            color = [UIColor blackColor];
+        }
+    }
+    return color;
+}
+-(void)setNavTitleColor:(UIColor *)navTitleColor {
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: navTitleColor}];
+    objc_setAssociatedObject(self, vcTitleColorKey, navTitleColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 @end
