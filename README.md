@@ -1,11 +1,10 @@
 
-<p align="center">
+
 ## MTransparentNav
 
 Change NavigationBar's color and transparency
 
 导航栏滑动渐变
-</p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/platform-iOS-yellow.svg">
