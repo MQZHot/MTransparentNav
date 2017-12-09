@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "mqz" => "mqz1228@163.com" }     
   s.platform     = :ios, "8.0"                     
   s.source       = { :git => "https://github.com/MQZHot/MTransparentNav.git", :tag => "1.0.1"  }
-  s.source_files  = "TransparentNav/TransparentNav/**/*"              
+  s.source_files  = "MTransparentNav/MTransparentNav/**/*"              
   s.requires_arc = true
 
 end
