@@ -33,6 +33,8 @@
     UIImageView *imgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mine"]];
     imgView.frame = CGRectMake(0, 0, SCREEN_W, SCREEN_W*420/750);
     self.tableView.tableHeaderView = imgView;
+    
+    self.edgesForExtendedLayout = UIRectEdgeAll;
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
@@ -44,7 +46,10 @@
     self.navTitleColor = [UIColor whiteColor];
     self.navBackgroundColor = [UIColor greenColor];
 }
-
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"%f", self.tableView.contentOffset.y);
+}
 #pragma mark - UIScrollViewDelegate 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat y = scrollView.contentOffset.y;
@@ -55,11 +60,14 @@
         self.navTitleColor = y < 0 ? [UIColor clearColor] : [UIColor whiteColor];
         self.navTintColor = y < 0 ? [UIColor clearColor] : [UIColor whiteColor];
     }
+//    self.navOffsetY = y;
 }
 
 -(void)colorChange:(UIBarButtonItem *)sender{
     QViewController *qVC = [[QViewController alloc]init];
-    [self.navigationController pushViewController:qVC animated:YES];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:qVC];
+    [self presentViewController:nav animated:YES completion:nil];
+//    [self.navigationController pushViewController:qVC animated:YES];
 }
 
 #pragma mark - Table view data source

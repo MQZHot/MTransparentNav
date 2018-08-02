@@ -21,10 +21,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     ViewController *rootVC = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
-    
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
-    
 //    [[UINavigationBar appearance]setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor yellowColor]}];
 //    [[UINavigationBar appearance]setBarTintColor:[UIColor purpleColor]];
 //    [[UINavigationBar appearance]setTintColor:[UIColor yellowColor]];
