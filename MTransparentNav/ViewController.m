@@ -46,10 +46,7 @@
     self.navTitleColor = [UIColor whiteColor];
     self.navBackgroundColor = [UIColor greenColor];
 }
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    NSLog(@"%f", self.tableView.contentOffset.y);
-}
+
 #pragma mark - UIScrollViewDelegate 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat y = scrollView.contentOffset.y;
